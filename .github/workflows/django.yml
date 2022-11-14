@@ -27,4 +27,4 @@ jobs:
         pip install django bs4 requests
     - name: Run Tests
       run: |
-        python manage.py runserver
+        python manage.py test
