@@ -14,6 +14,6 @@ def get_weather(response):
     temp = int(soup.find(class_="CurrentConditions--tempValue--MHmYY").contents[0][:-1])
     ctemp = (temp - 32) * 5 / 9
     final_temp = '%.2f' % ctemp
-    print()
+    print(1)
     #return HttpResponse(final_temp + '°Celsius ' + 'in Cluj-Napoca')
     return render(response, 'index.html', {'temp': final_temp})
